@@ -1,4 +1,4 @@
-import {} from '';
+
 
 export default function Pup() {
   return (
