@@ -12,7 +12,6 @@ export default async function Pup() {
 
     const { rows } = await sql`SELECT * FROM dogs`;
 
-
     console.log(rows)
 
   return (
@@ -23,6 +22,7 @@ export default async function Pup() {
                 return (
                         <div key={row.name}  className='border bg-slate-200 mt-4 w-3/5 h-80'>
                             <Image src={Mirco} alt='pup' width={200} height={200} ></Image>
+                            <h1>{row.name}</h1>
                         </div>
                 )
             })}

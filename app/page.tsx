@@ -5,6 +5,7 @@ import pup from '../public/pup.jpeg';
 import Nav from "./components/nav";
 import Header from "./components/header";
 import Pup from "./components/pup";
+import Pups from "./components/pups";
 
 export default function Home() {
   return (
