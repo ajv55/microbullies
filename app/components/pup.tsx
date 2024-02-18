@@ -12,8 +12,6 @@ export default async function Pup() {
 
     const { rows } = await sql`SELECT * FROM dogs`;
 
-    console.log(rows)
-
   return (
     <div>
         <div className='w-screen h-content border border-red-400 text-2xl flex flex-col justify-start md:flex-row items-center gap-5'>
