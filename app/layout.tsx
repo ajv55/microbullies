@@ -4,6 +4,7 @@ import "./globals.css";
 
 //components
 import Nav from "./components/nav";
+import Pup from "./components/pup";
 
 const inter = Inter({ subsets: ["latin"] });
 
