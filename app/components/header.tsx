@@ -4,7 +4,7 @@ import { roboto } from '../fonts/font';
 export default function Header
 () {
   return (
-    <div className={`${roboto.className} w-4/6 h-4/5 flex flex-col justify-center items-start p-20 gap-3 lg:gap-3`} >
+    <div className={`${roboto.className} w-4/6 h-4/5 flex flex-col justify-center items-start p-16 gap-3 lg:gap-3`} >
         <h1 className=" mb-7 md:mb-2 sm:text-sm w-64 md:w-96 text-4xl font-bold tracking-tight leading-none text-gray-900  md:text-5xl lg:text-5xl dark:text-white ">Tiny But Mighty: <br /> Exotic Micro Puppies Await!</h1>
         <p className=" mb-7 md:mb-6 w-56 flex justify-center items-center text-xs md:text-lg font-normal text-gray-500 lg:text-lg md:w-60  h-2/5 dark:text-gray-400">Find your perfect companion among our adorable micro Pitbull puppies. Loyal, loving, and full of personality, they&#39;re ready to bring joy to your home.</p>
         <div className='flex items-start w-32 '>

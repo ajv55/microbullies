@@ -5,7 +5,9 @@ import pup from '../public/pup.jpeg';
 import Nav from "./components/nav";
 import Header from "./components/header";
 import Pup from "./components/pup";
-import Pups from "./components/pups";
+import Info from "./components/info";
+import Why from "./components/why";
+
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
       }} className="bg-center bg-repeat min-h-screen max-h-screen md:bg-no-repeat md:bg-cover lg:max-w-full lg:max-h-screen lg:bg-cover lg:bg-no-repeat border border-red-300 flex flex-col justify-center items-start p-2">
         <Header />
       </div>
+      <Why />
       <Pup />
     </div>
     

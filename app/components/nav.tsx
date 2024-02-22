@@ -32,7 +32,7 @@ export default function Nav(prop: HamburgerProps) {
       <h1 className="text-3xl text-zinc-200  flex justify-center items-center">Junior&#39;s Logo</h1>
       <CiMenuFries size={30} className="md:hidden" color="white" onClick={handleMenu}/>
     </div>
-    {isOpen && <div className=" w-screen h-screen absolute bg-black-600 z-10 backdrop-blur-md flex flex-col gap-9 items-end">
+    {isOpen && <div className=" w-screen h-screen fixed bg-black-600 z-10 backdrop-blur-md flex flex-col gap-9 items-end">
          <div className="flex justify-center items-end p-2">
           <GoX size={43} color="white" onClick={handleMenu}/>
          </div>
