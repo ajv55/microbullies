@@ -15,7 +15,7 @@ const config: Config = {
       },
       fontSize: {
         xxs: '10px'
-      }
+      },
     },
   },
   plugins: [],

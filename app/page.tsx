@@ -7,6 +7,7 @@ import Header from "./components/header";
 import Pup from "./components/pup";
 import Info from "./components/info";
 import Why from "./components/why";
+import Ready from "./components/ready";
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       </div>
       <Why />
       <Pup />
+      <Ready />
     </div>
     
   );
