@@ -5,7 +5,7 @@ import Temp from './temp'
 
 export default function Ready() {
   return (
-    <div className='w-full h-content flex flex-col md:flex-row gap-16 justify-center items-center mt-12 p-5'>
+    <div className='w-full h-content flex flex-col md:flex-row gap-16 justify-center items-center mt-12 p-5 mb-1' >
         <h2 className={`${alegreya.className} text-4xl p-2`} >Ready to Bring Home Your New Puppy?</h2>
         <div className=' md:w-2/5 w-content h-72 relative bg-slate-200 shadow-xl flex flex-col justify-center items-center rounded-lg p-6 gap-4'>
             <div className='rounded-full w-16 h-16 bg-opacity-65 shadow-lg bg-teal-300 flex justify-center items-center'>
