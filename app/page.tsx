@@ -8,6 +8,7 @@ import Pup from "./components/pup";
 import Info from "./components/info";
 import Why from "./components/why";
 import Ready from "./components/ready";
+import Form from "./components/form";
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Why />
       <Pup />
       <Ready />
+      <Form />
     </div>
     
   );
