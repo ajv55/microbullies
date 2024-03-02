@@ -1,0 +1,28 @@
+.shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.shape svg {
+    position: relative;
+    display: block;
+    width: calc(109% + 1.3px);
+    height: 199px;
+}
+
+.shapeFill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .shape svg {
+        width: calc(152% + 1.3px);
+        height: 117px;
+    }
+}

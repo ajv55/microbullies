@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 //components
 import Nav from "./components/nav";
 import Pup from "./components/pup";
+import Footer from "./components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +25,8 @@ export default function RootLayout({
       <body className={`${inter.className} relative`}>
         <Nav />
         {children}
+        <Toaster position="bottom-right" reverseOrder={false}/>
+        <Footer />
         </body>
     </html>
   );
