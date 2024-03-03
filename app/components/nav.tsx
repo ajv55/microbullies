@@ -27,7 +27,7 @@ export default function Nav(prop: HamburgerProps) {
 
 
   return (
-    <div className="flex justify-between w-full absolute bg-transparent">
+    <div className="flex justify-between w-full absolute bg-transparent z-10">
     <div className="flex justify-between w-full p-4">
       <h1 className="text-3xl text-zinc-200  flex justify-center items-center">Junior&#39;s Logo</h1>
       <CiMenuFries size={30} className="md:hidden" color="white" onClick={handleMenu}/>
