@@ -5,7 +5,7 @@ import { PiDogThin } from "react-icons/pi";
 
 export default function What() {
   return (
-    <div className='mt-32 bg-stone-700 rounded-lg shadow-lg w-[25rem] h-content p-5 flex flex-col justify-start items-center mb-16'>
+    <div className='mt-32 bg-stone-700 rounded-lg shadow-lg w-[21rem] h-content p-5 flex flex-col justify-start items-center mb-16'>
         <h1 className={`${roboto.className} text-3xl mb-6 text-white border-b-2 border-t-orange-100 pb-8`}>Understanding Micro Pitbulls</h1>
         <div className='flex flex-col justify-start items-start gap-4'>
             <h1 className='text-xl underline underline-offset-8 mb-6 text-white'>Size and Proportions :</h1>
