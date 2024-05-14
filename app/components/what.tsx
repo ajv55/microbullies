@@ -5,67 +5,39 @@ import { PiDogThin } from "react-icons/pi";
 
 export default function What() {
   return (
-    <div className='mt-32 bg-stone-700 rounded-lg shadow-lg w-[21rem] h-content p-5 flex flex-col justify-start items-center mb-16'>
-        <h1 className={`${roboto.className} text-3xl mb-6 text-white border-b-2 border-t-orange-100 pb-8`}>Understanding Micro Pitbulls</h1>
-        <div className='flex flex-col justify-start items-start gap-4'>
-            <h1 className='text-xl underline underline-offset-8 mb-6 text-white'>Size and Proportions :</h1>
-            <div className='flex flex-col justify-center items-center gap-7'>
-                <PiDogThin size={50} color='tan'/>
-                <p className='text-sm tracking-normal text-gray-500 md:text-lg dark:text-gray-300'>Micro pitbulls are distinguished by their diminutive stature compared to standard American Pit Bull Terriers. While there is no precise definition of size, micro pitbulls typically weigh between 10 to 30 pounds and stand around 10 to 17 inches tall at the shoulder when fully grown.</p>
-            </div>
-            <div className='flex flex-col justify-center items-center gap-7 mt-9 mb-5'>
-                <PiDogThin size={50} color='tan'/>
-                <p className='text-sm tracking-normal text-gray-500 md:text-lg dark:text-gray-300'>Despite their smaller size, micro pitbulls retain the muscular build, broad head, and distinct features of their larger counterparts.</p>
-            </div>
+    <div className='w-full h-content flex flex-col justify-start gap-10 items-center'>
+        <h1 className='text-8xl font-bold tracking-wider mt-12 text-center'>Understanding Dog <span className=' bg-gradient-to-br from-orange-900 via-orange-600 to-orange-300 bg-clip-text text-transparent'>Breeds</span></h1>
 
-            <div className='flex flex-col justify-start items-start gap-4 mt-8 border-t-2 border-t-orange-100'>
-                <h1 className='text-xl underline underline-offset-8 mb-16 mt-16 text-white'>Temperament and Personality :</h1>
-                <div className='flex flex-col justify-center items-center gap-7'>
-                    <PiDogThin size={50} color='tan'/>
-                    <p className='text-sm tracking-normal text-gray-500 md:text-lg dark:text-gray-300'>Micro pitbulls exhibit the same loyalty, affection, and devotion that pit bulls are renowned for. They form strong bonds with their families and thrive on companionship and interaction.</p>
-                </div>
-                <div className='flex flex-col justify-center items-center gap-7 mt-9 mb-5'>
-                    <PiDogThin size={50} color='tan'/>
-                    <p className='text-sm tracking-normal text-gray-500 md:text-lg dark:text-gray-300'>Known for their friendly and sociable nature, micro pitbulls often make excellent family pets and are known to be gentle and loving towards children and other animals when properly socialized.</p>
-            </div>
-
-                <div className='flex flex-col justify-start items-startgap-4 mt-8 border-t-2 border-t-orange-100'>
-                    <h1 className='text-xl underline underline-offset-8 mb-6 mt-12 text-white'>Health and Care :</h1>
-                    <div className='flex flex-col justify-center items-center gap-7 mt-14'>
-                        <PiDogThin size={50} color='tan'/>
-                        <p className='text-sm tracking-normal text-gray-500 md:text-lg dark:text-gray-300'>Just like any other dog breed, micro pitbulls require regular veterinary check-ups, vaccinations, and preventive care to maintain their health and well-being.</p>
-                    </div>
-                    <div className='flex flex-col justify-center items-center gap-7 mt-9 mb-5'>
-                        <PiDogThin size={50} color='tan'/>
-                        <p className='text-sm tracking-normal text-gray-500 md:text-lg dark:text-gray-300'>Providing a balanced diet, regular exercise, and routine grooming are essential components of caring for a micro pitbull. Additionally, it&#39;s important to be aware of potential health issues common to the breed, such as hip dysplasia and skin allergies.</p>
-                    </div>
-                </div>
-
-                <div className='flex flex-col justify-start items-startgap-4 mt-8 border-t-2 border-t-orange-100'>
-                    <h1 className='text-xl underline underline-offset-8 mb-6 mt-12 text-white'> Training and Socialization :</h1>
-                    <div className='flex flex-col justify-center items-center gap-7 mt-14'>
-                        <PiDogThin size={50} color='tan'/>
-                        <p className='text-sm tracking-normal text-gray-500 md:text-lg dark:text-gray-300'>Early training and socialization are paramount for micro pitbulls to develop into well-behaved and well-adjusted companions. Positive reinforcement-based training methods are highly effective, as micro pitbulls respond well to praise and rewards.</p>
-                    </div>
-                    <div className='flex flex-col justify-center items-center gap-7 mt-9 mb-5'>
-                        <PiDogThin size={50} color='tan'/>
-                        <p className='text-sm tracking-normal text-gray-500 md:text-lg dark:text-gray-300'>Exposing your micro pitbull to a variety of people, environments, and experiences from a young age helps to build their confidence and ensure they grow into confident and sociable dogs.</p>
-                    </div>
-                </div>
-
-                <div className='flex flex-col justify-start items-startgap-4 mt-8 border-t-2 border-t-orange-100'>
-                    <h1 className='text-xl underline underline-offset-8 mb-6 mt-12 text-white'>Lifespan and Longevity :</h1>
-                    <div className='flex flex-col justify-center items-center gap-7 mt-14'>
-                        <PiDogThin size={50} color='tan'/>
-                        <p className='text-sm tracking-normal text-gray-500 md:text-lg dark:text-gray-300'>With proper care and attention, micro pitbulls can live long and healthy lives, typically averaging a lifespan of around 10 to 15 years.</p>
-                    </div>
-                    <div className='flex flex-col justify-center items-center gap-7 mt-9 mb-5'>
-                        <PiDogThin size={50} color='tan'/>
-                        <p className='text-sm tracking-normal text-gray-500 md:text-lg dark:text-gray-300'>Building a strong bond with your micro pitbull and providing them with a loving and nurturing environment is key to ensuring their longevity and quality of life.</p>
-                    </div>
-                </div>
-            </div>
+        <div className=' w-[85%] h-[18rem] mt-12  p-2 flex flex-col gap-10 justify-center items-center'>
+            <h4 className='text-5xl font-bold tracking-wide  underline underline-offset-8'>Introduction</h4>
+            <p className='text-2xl w-[87%] font-light  tracking-wide text-center'>Dogs come in a remarkable array of <span className='font-bold'>shapes</span>, sizes, and <span className='font-bold'>temperaments</span>, each breed uniquely adapted to fulfill specific roles and companionship needs. <span className='font-bold'>Understanding</span> the characteristics and traits of different dog breeds can help prospective owners choose a companion that aligns with their <span className='font-bold'>lifestyle</span>, <span className='font-bold'>preferences</span>, and <span className='font-bold'>requirements</span>. Here, we delve into the general information across various dog breeds to provide insights into their origins, temperaments, <span className='font-bold'>exercise needs</span>, grooming requirements, and <span className='font-bold'>more</span>.</p>
         </div>
+
+        <div className=' w-[85%] h-[18rem]  p-2 flex flex-col gap-10 justify-center items-center'>
+            <h4 className='text-5xl font-bold tracking-wide underline underline-offset-8'>Origins</h4>
+            <p className='text-2xl w-[87%] font-light tracking-wide text-center'>Every dog breed has a <span className='font-bold'>rich history</span>, often tracing back centuries or even millennia. From the <span className='font-bold'>ancient guardians</span> of Egypt to the agile herding dogs of the Scottish Highlands, the origins of each breed reflect the <span className='font-bold'>specific tasks</span> and <span className='font-bold'>environments</span> for which they were developed.</p>
+        </div>
+
+        <div className=' w-full h-[18rem]  p-2 flex flex-col gap-10 justify-center items-center'>
+            <h4 className='text-5xl font-bold tracking-wide  underline underline-offset-8'>Temperament</h4>
+            <p className='text-2xl w-[87%] font-light tracking-wide text-center'>Temperament <span className='font-bold'>varies</span> widely among dog breeds, influenced <span className='font-bold'>by genetics</span>, breeding <span className='font-bold'>history</span>, and individual <span className='font-bold'>upbringing</span>. While some breeds are known for their gentle and <span className='font-bold'>affectionate nature</span>, others may exhibit traits such as independence, <span className='font-bold'>intelligence</span>, or protective instincts. Understanding a breed&#39;s typical temperament can help owners anticipate and address <span className='font-bold'>behavioral traits</span> effectively.</p>
+        </div>
+
+        <div className=' w-full h-[18rem]  p-2 flex flex-col gap-10 justify-center items-center'>
+            <h4 className='text-5xl font-bold tracking-wide underline  underline-offset-8'>Exercise Needs</h4>
+            <p className='text-2xl w-[87%] font-light tracking-wide text-center'>Different dog breeds have varying <span className='font-bold'>exercise requirements</span> based on their energy <span className='font-bold'>levels</span>, <span className='font-bold'>size</span>, and <span className='font-bold'>activity history</span>. Breeds bred for work or sporting purposes, such as Retrievers and Border Collies, may require ample daily exercise to <span className='font-bold'>stay mentally</span> and <span className='font-bold'>physically stimulated</span>. On the other hand, <span className='font-bold'>toy breeds</span> and <span className='font-bold'>brachycephalic breeds</span> may have lower exercise needs but still benefit from regular activity to <span className='font-bold'>maintain health</span> and <span className='font-bold'>well-being</span>.</p>
+        </div>
+
+        <div className=' w-full h-[18rem]  p-2 flex flex-col gap-10 justify-center items-center'>
+            <h4 className='text-5xl font-bold tracking-wide  underline underline-offset-8'>Grooming Requirements</h4>
+            <p className='text-2xl w-[87%] font-light tracking-wide text-center'><span className='font-bold'>Grooming needs</span> vary greatly among dog breeds, ranging from <span className='font-bold'>minimal maintenance</span> to regular grooming sessions. <span className='font-bold'>Long-haired breeds</span> like the Afghan Hound and the Poodle may require <span className='font-bold'>frequent brushing</span> and professional grooming to prevent matting and maintain coat health. <span className='font-bold'>Short-haired breeds</span>, while generally <span className='font-bold'>lower maintenance</span>, may still benefit from occasional grooming to remove loose hair and debris.</p>
+        </div>
+
+        <div className=' w-full h-[18rem]  p-2 flex flex-col gap-10 justify-center items-center'>
+            <h4 className='text-5xl font-bold tracking-wide underline  underline-offset-8'>Health Considerations</h4>
+            <p className='text-2xl w-[87%] font-light tracking-wide text-center'><span className='font-bold'>Each dog breed</span> has its own set of potential health concerns and considerations, influenced <span className='font-bold'>by genetics</span>, <span className='font-bold'>conformation</span>, and <span className='font-bold'>breeding practices</span>. Responsible breeders prioritize health testing and screening to <span className='font-bold'>minimize </span> the risk of hereditary diseases and <span className='font-bold'>promote overall</span> well-being. Prospective owners should <span className='font-bold'>research breed-specific</span> health issues and consult with reputable breeders to make informed decisions about their chosen breed&#39;s health.</p>
+        </div>
+
     </div>
   )
 }
