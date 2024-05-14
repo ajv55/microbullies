@@ -1,7 +1,7 @@
 'use client';
 
-import { motion ,useScroll } from "framer-motion";
-import { useRef } from 'react';
+import { motion ,useScroll, useInView, useAnimation } from "framer-motion";
+import { useEffect, useRef } from 'react';
 import { dogData } from "../data/data";
 import Image from "next/image";
 import Mirco from '../../public/mirco.png';
@@ -16,17 +16,25 @@ type CardProps = {
     key: string,
     gender: string,
     price: number,
-    age: string
+    age: string,
+    index: number
 
 }
 
-export default function Card({name, key, gender, price, age}: CardProps) {
+export default function Card({name, key, gender, price, age, index}: CardProps) {
 
     const ref = useRef(null);
+    const isInView = useInView(ref);
+    const mainControls = useAnimation();
 
+    useEffect(() => {
+        if(isInView){
+           mainControls.start('visible')
+        }
+    }, [isInView, mainControls])
 
   return (
-        <motion.div ref={ref} key={key}  initial={{scale: 0.5, opacity: 0.6}} viewport={{once: true}} whileInView={{scale: 1, opacity: 1}} className={`${roboto.className} border bg-slate-400 flex flex-col justify-start items-center mt-4 w-[19rem] h-[26rem] rounded-md p-4 gap-3 shadow-lg`}>
+        <motion.div ref={ref} key={key} variants={{hidden: {opacity: 0, scale: 0, y: 75}, visible: {opacity: 1, scale: 1, y: 0}}} initial='hidden' animate={mainControls} transition={{duration:0.45, type: 'spring', delay: 0.25 * index}}  className={`${roboto.className} border bg-slate-400 flex flex-col justify-start items-center mt-4 w-[19rem] h-[26rem] rounded-md p-4 gap-3 shadow-lg`}>
             <Image className="rounded-md" src={Mirco} alt='pup' width={320} height={150} ></Image>
             <div className="w-full p-2 gap-3 flex justify-evenly items-center">
                 <div className="flex justify-start items-center gap-3">

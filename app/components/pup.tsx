@@ -1,4 +1,4 @@
-import { sql } from '@vercel/postgres';
+
 import Image from 'next/image';
 import Mirco from '../../public/mirco.png';
 import Card from './card';
@@ -29,15 +29,15 @@ type data = {
 export default async function Pup() {
 
 
-    const { rows } = await sql`SELECT * FROM jrsdogs`;
+   
 
-    console.log(rows)
+    console.log(dogData)
 
   return (
-    <div className='flex flex-col justify-center items-center bg-slate-200 p-9'>
-        <h2 className={`${alegreya.className} text-4xl underline underline-offset-8 decoration-2 mb-14 p-4`}>Browser our puppies</h2>
+    <div className='flex flex-col justify-center items-center p-9'>
+        <h2 className={`${alegreya.className} text-8xl underline underline-offset-8 decoration-2 mb-14 p-4`}>Browser our puppies</h2>
         <div className='w-screen h-content  text-2xl flex flex-col justify-start md:flex-row md:flex-wrap md:justify-center items-center gap-5'>
-            {dogData.map((row) => {
+            {dogData.map((row, i: number) => {
                return (
                 <Link key={row.name} href={{pathname: `/${row.id}`, query: {
                   name: row.name,
@@ -50,7 +50,7 @@ export default async function Pup() {
                   dadsWeight: row.dadWeight,
                   birthday: row.birthday,
                   age: row.age
-                }}}><Card name={row.name} gender={row.gender} price={row.price} key={row.name} age={row.age} /></Link>
+                }}}><Card index={i} name={row.name} gender={row.gender} price={row.price} key={row.name} age={row.age} /></Link>
                )
             })}
         </div>
