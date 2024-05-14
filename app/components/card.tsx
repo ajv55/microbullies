@@ -34,22 +34,25 @@ export default function Card({name, key, gender, price, age, index}: CardProps) 
     }, [isInView, mainControls])
 
   return (
-        <motion.div ref={ref} key={key} variants={{hidden: {opacity: 0, scale: 0, y: 75}, visible: {opacity: 1, scale: 1, y: 0}}} initial='hidden' animate={mainControls} transition={{duration:0.45, type: 'spring', delay: 0.25 * index}}  className={`${roboto.className} border bg-slate-400 flex flex-col justify-start items-center mt-4 w-[19rem] h-[26rem] rounded-md p-4 gap-3 shadow-lg`}>
+        <motion.div ref={ref} key={key} variants={{hidden: {opacity: 0, scale: 0, y: 75}, visible: {opacity: 1, scale: 1, y: 0}}} initial='hidden' animate={mainControls} transition={{duration:0.45, type: 'spring', delay: 0.15 * index}}  className={`${roboto.className}  bg-gradient-to-bl from-slate-900 via-slate-700 to-slate-400 flex flex-col justify-start items-center mt-4 w-[24rem] h-[32rem] drop-shadow-2xl rounded-md p-4 gap-3 shadow-lg`}>
             <Image className="rounded-md" src={Mirco} alt='pup' width={320} height={150} ></Image>
             <div className="w-full p-2 gap-3 flex justify-evenly items-center">
-                <div className="flex justify-start items-center gap-3">
-                    {gender === 'Male' && <IoIosMale size={20} color="blue" />}
-                    {gender === 'Female' && <IoIosFemale size={20} color="pink" />}
-                    <h1 className="tracking-tighter  text-2xl dark:text-black">{name}</h1>
+                <div className="flex  lg:w-[65%] justify-start items-center gap-3">
+                    {gender === 'Male' && <IoIosMale className="lg:w-10 lg:h-10" size={20} color="blue" />}
+                    {gender === 'Female' && <IoIosFemale className="lg:w-10 lg:h-10" size={20} color="pink" />}
+                    <h1 className="tracking-tighter lg:text-4xl lg:text-white  text-2xl ">{name}</h1>
                 </div>
-                <div className="border px-2 py-1 flex justify-center items-center bg-slate-200 rounded-2xl shadow-md">
-                    <h5 className="text-sm">{age}</h5>
+                <div className="border lg:w-[35%] px-2 py-1 flex justify-center items-center bg-slate-200 rounded-2xl shadow-md">
+                    <h5 className="text-sm lg:text-md">{age}</h5>
                 </div>
             </div>
             <div className=" w-full h-[8rem] flex justify-between items-end p-2">
-                <h3 className="text-xl">${price}.00</h3>
-                <div className="w-28 flex justify-center items-center bg-green-400 rounded-3xl">
-                    <h6 className="text-lg text-black shadow-2xl">Available</h6>
+                <div className="flex flex-col  justify-end items-center">
+                  <span className="text-gray-300 text-sm font-light tracking-wide">price</span>
+                   <h3 className="text-xl lg:text-2xl">${price}.00</h3>
+                </div>
+                <div className="w-28 lg:w-32 lg:py-2 flex justify-center items-center bg-green-400 rounded-3xl">
+                    <h6 className="text-lg lg:text-xl text-black shadow-2xl">Available</h6>
                 </div>
             </div>
         </motion.div>
